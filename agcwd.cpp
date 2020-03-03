@@ -1,7 +1,7 @@
 #include<opencv2/opencv.hpp>
 #include<math.h>
 
-cv::Mat ImageUtility::contrastEnhance(cv::Mat image, float weightingParam)
+cv::Mat contrastEnhance(cv::Mat image, float weightingParam)
 {
     cv::Mat intensity(image.size(), CV_32F);
     cv::Mat hsvImg, pdf;
